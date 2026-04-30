@@ -8,7 +8,12 @@ app = FastAPI(title="Team Task Manager API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://localhost:3000",
+        "https://team-task-manager-xm4d.vercel.app",
+    ],
     allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],

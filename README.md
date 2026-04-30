@@ -2,14 +2,14 @@
 
 A full-stack production-ready web application built with FastAPI (Backend), MongoDB (Database), and React.js (Frontend).
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js, Vite, Tailwind CSS, Axios, React Router Dom
 - **Backend**: FastAPI, Python 3.9+, Motor (Async MongoDB Driver), Pydantic
 - **Database**: MongoDB
 - **Authentication**: JWT-based Authentication, Bcrypt for password hashing
 
-## 🔑 Test Credentials
+## Test Credentials
 
 For evaluation purposes, you can use the following accounts to test the Role-Based Access Control (RBAC):
 
@@ -21,7 +21,7 @@ For evaluation purposes, you can use the following accounts to test the Role-Bas
 > [!NOTE]
 > The **Admin** user can create projects, add members, and assign tasks. The **Member** user can only see projects they belong to and update task statuses.
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 ### 1. Backend Setup
 
@@ -63,7 +63,7 @@ For evaluation purposes, you can use the following accounts to test the Role-Bas
    npm run dev
    ```
 
-## 🌍 API Endpoints
+## API Endpoints
 
 Once the backend is running, you can access the interactive Swagger UI documentation at:
 **http://localhost:8000/docs**
