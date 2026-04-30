@@ -9,11 +9,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://team-task-manager-xm4d.vercel.app",
+        "https://team-task-manager-xm4d.vercel.app/",
         "http://localhost:5173",
+        "http://localhost:5173/",
     ],
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_headers=["Content-Type", "Authorization", "Accept", "X-Requested-With"],
 )
 
 app.include_router(auth.router, prefix="/api")
