@@ -9,17 +9,6 @@ A full-stack production-ready web application built with FastAPI (Backend), Mong
 - **Database**: MongoDB
 - **Authentication**: JWT-based Authentication, Bcrypt for password hashing
 
-## Test Credentials
-
-For evaluation purposes, you can use the following accounts to test the Role-Based Access Control (RBAC):
-
-| Role | Email | Password |
-| :--- | :--- | :--- |
-| **Admin** | `admin@test.com` | `123456` |
-| **Member** | `urvashi@test.com` | `123456` |
-
-> [!NOTE]
-> The **Admin** user can create projects, add members, and assign tasks. The **Member** user can only see projects they belong to and update task statuses.
 
 ## Setup Instructions
 

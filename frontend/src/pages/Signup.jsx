@@ -18,7 +18,8 @@ export default function Signup() {
       await signup(name, email, password);
       navigate('/dashboard');
     } catch (err) {
-      setError('Registration failed. Email might be in use.');
+      const message = err.response?.data?.message || err.response?.data?.detail || 'Registration failed. Please try again.';
+      setError(message);
     }
   };
 
